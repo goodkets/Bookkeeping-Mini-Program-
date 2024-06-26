@@ -1,0 +1,14 @@
+<!--components/expenditure/expenditure.wxml-->
+<!-- 消费类型组件 -->
+<button type="warn" class="Consumption-type" wx:if="{{!status}}" bindtap="changeStatus">  <van-icon name="location-o" />asd</button>
+<van-picker
+  show-toolbar
+  title="消费类型"
+  default-index="{{0}}"
+  columns="{{ columns }}"
+  bind:cancel="onCancel"
+  bind:confirm="onConfirm"
+  wx:else="{{status}}"
+/>
+
+

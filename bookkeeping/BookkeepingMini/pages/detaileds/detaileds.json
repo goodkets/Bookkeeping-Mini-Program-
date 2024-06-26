@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-icon":"/miniprogram_npm/@vant/weapp/icon/index",
+    "van-empty": "@vant/weapp/empty/index"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle":"dark",
+  "backgroundColor": "#6686CD"
+}

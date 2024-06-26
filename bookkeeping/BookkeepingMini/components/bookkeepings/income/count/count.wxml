@@ -1,0 +1,63 @@
+<!--components/bookkeepings/count/count.wxml-->
+<!-- 收入组件-->
+<view class="quan" style="position: absolute; left: 200rpx; top: 20rpx;">
+<view class="shui"></view>
+</view>
+<expenditure-yy bind:sync="datas"  column="{{ column}}"  ></expenditure-yy>
+
+<view class="containerc">
+  <view class="information" >
+  <view class="time" wx:if="{{status}}">
+    <van-icon name="clock" class="coin" id="s"></van-icon>
+    <van-cell-group>
+  <van-field
+    value="{{ value1 }}"
+    placeholder="请确认时间(必填)"
+    border="{{ false }}"
+    bind:focus="onChange"
+  />
+ 
+</van-cell-group>
+  </view>
+    <van-datetime-picker
+    show-toolbar
+    wx:else="{{!status}}"
+  type="date"
+  value="{{ currentDate }}"
+  bind:input="onInput"
+  bind:confirm="confirm"
+  bind:cancel="cancel"
+  min-date="{{ minDate }}"
+  formatter="{{ formatter }}"
+/>
+ <view class="money">
+  <van-icon name="gold-coin" class="coin" />
+  <van-cell-group>
+  <van-field
+    model:value="{{ value2 }}"
+    placeholder="请输入金额(必填)"
+    border="{{ false }}"
+    type="number"
+     maxlength="10"
+     bind:input='Numbers'
+  />
+</van-cell-group>
+ </view>
+ <view class="remarks">
+  <van-icon name="comment" class="coin" />
+  <van-cell-group>
+  <van-field
+    model:value="{{ value3 }}"
+    placeholder="有特殊情况记得备注哟"
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+ </view>
+
+ <view class="submit">
+  <van-button type="info" class="submit1" bindtap="submit">提交</van-button>
+  <van-button type="warning" style="margin-left: 200rpx;" class="submit1" bindtap="empty">清除</van-button>
+ </view>
+  </view>
+</view>

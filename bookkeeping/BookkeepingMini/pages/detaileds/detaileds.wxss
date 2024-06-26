@@ -1,0 +1,92 @@
+/* pages/detaileds/detaileds.wxss */
+
+#s {
+  font-size: 30rpx;
+}
+.a{
+  margin-top: 200rpx;
+  margin-bottom: 400rpx;
+}
+.topico {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* margin-top: 20rpx; */
+ padding-left: 20rpx;
+  /* width: 100%; */
+  /* border-bottom: orange 1px solid; */
+  line-height: 90rpx;
+  /* background-color: rgba(96, 160, 255, 0.5); */
+
+}
+.topico text{
+font-family: "微软雅黑";
+}
+.informations{
+ /* display: flex;
+ flex-direction: row;
+ justify-content: space-between; */
+ /* margin: 30rpx 60rpx 0 ; */
+ background-color: rgba(90,160,255, 0.8);
+ border-radius: 20%;
+ margin: 30rpx 0;
+ /* margin-bottom: 50rpx; */
+ padding: 30rpx ;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 700;
+ line-height: 50rpx;
+ box-shadow: 5rpx 5rpx 3rpx ;
+  /* border-bottom: 1px solid #aaa; */
+ /* background-color: skyblue; */
+}
+.informations:last-child{
+  margin-top: 50rpx;
+  background-color: transparent;
+  box-shadow: none;
+}
+image{
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  /* position:absolute; */
+}
+.informations .icon{
+float: left;
+}
+.informations .title{
+  float: left;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  margin-left: 30rpx;
+
+ 
+}
+.informations .mony{
+  float: right;
+  margin-top: 20rpx;
+} 
+.clearfix:after{    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+}
+.goTop{
+  height: 80rpx;
+  width: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 200rpx;
+  background: rgba(0,0,0,.3);
+  right: 80rpx; 
+  border-radius: 50%;
+  z-index: 9;
+  }

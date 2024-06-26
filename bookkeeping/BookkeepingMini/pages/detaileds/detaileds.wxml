@@ -1,0 +1,47 @@
+<!-- pages/detaileds/detaileds.wxml -->
+<view class="containerD">
+  <view class="topico">
+<label for="s" bindtap="changeStatus" class="a">
+  <van-icon name="bookmark" id="s"></van-icon>
+<text style="padding-left: 0;"  id="s">{{ times}}</text></label>
+<van-datetime-picker
+type="year-month"
+  value="{{ currentDate }}"
+  bind:input="onInput"
+  min-date="{{ minDate }}"
+  formatter="{{ formatter }}"
+  bind:confirm="confirm"
+  bind:cancel="onCancel"
+  title="选择月份"
+  wx:if="{{!status}}"
+  style="position: fixed;width: 100%;left: 2rpx; top:650rpx"
+/>
+<view>
+  <text bindtap="dayExpenditure">总收入：{{dayCount}}</text>
+<text style="padding-left: 100rpx;" bindtap="dayCount">总支出：{{dayExpenditure}}</text></view>
+</view>
+<image src="../../images/4c6fa7d255ed7878d299bf1edae142e3.jpeg" mode="aspectFill" wx:if="{{!wu}}"></image>
+<van-empty description="该月无记录" wx:if="{{wu}}" />
+<view class="a"> 
+  <view class=".informations clearfix" wx:for="{{consumption}}" wx:key="{{item.id}}" >
+
+<view class="icon" style="margin-top: 20rpx;"><van-icon name="gem-o" /></view>
+<view class="title">
+<text style=" font-size: 40rpx;">{{item.title}}</text>
+<text style="font-size: 25rpx;margin-top: 10rpx;">{{item.pub_data}}</text>
+</view>
+<view class="mony" wx:if="{{!item.status}}" style="color: red;">{{ -item.mony}}</view>
+<view class="mony" wx:else="{{item.status}}" style="color: green;">{{ '+'+item.mony}}</view>
+<view style="font-size: 20rpx;" wx:if="{{item.bei=='无'}}"></view>
+<view style="font-size: 20rpx;" wx:else>备注：{{item.bei}}</view>
+</view>
+<view class="informations"></view>
+<!-- 返回顶部  -->
+           
+</view>
+<view class='goTop' hidden='{{!scrollTop}}' bindtap="goTop">
+  <van-icon name="arrow-up" style="margin-left: 25rpx;"/>
+            </view>
+</view>
+
+

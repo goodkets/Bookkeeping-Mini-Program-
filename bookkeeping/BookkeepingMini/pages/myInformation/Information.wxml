@@ -1,0 +1,34 @@
+<!--pages/myInformation/Information.wxml-->
+<!-- <view>未登录</view> -->
+<view class="containerl">
+  
+  <view class="user-information">
+   <view class="top">
+   <view class="image" wx:if="{{status}}">
+    <image src="../../images/bigUserHeader.png" style="width: 100rpx;height: 100rpx;border-radius: 100%;" wx:if="{{!pic}}"></image>
+    <image src="{{pic}}" style="width: 100rpx;height: 100rpx;border-radius: 100%" wx:else></image>
+    </view>
+    <view  class="btn" bindtap="login" wx:if="{{!status}}" style="color: #fff;">请先登陆</view>
+    <view class="btn" wx:else="{{status}}">
+    <text wx:if="{{!nickname}}">未设置昵称</text>
+    <text style="font-size: 40rpx;" wx:else>{{nickname}}</text>
+    </view>   
+    </view>
+    <view class="bottom">
+    <view class="xinxi" wx:for="{{xinxi}}" wx:key="{{item.id}}"  data-id="{{item.id}}" bindtap="my" >
+    <view class="left">
+      <van-icon name="{{item.icon}}" style="margin:0 20rpx 0 10rpx;font-size:40rpx" />
+      <text style="cursor:pointer">{{item.name}}</text>
+    </view>
+    <view class="right"><van-icon name="arrow" style="margin-left: 20rpx;"></van-icon></view>
+    </view>
+    <view class="tui">
+      <van-button type="danger" class="btns" bindtap="tui">退出登陆</van-button>
+      <van-dialog id="van-dialog" />
+
+
+    </view>
+    </view>
+    
+  </view>
+</view>

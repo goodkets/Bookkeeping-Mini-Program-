@@ -1,0 +1,14 @@
+<!--pages/tab/tab1/tab1.wxml-->
+<!-- <text>pages/tab/tab1/tab1.wxml</text> -->
+<!-- <van-empty description="暂无此功能" /> -->
+<view class="container">
+<view class="btn">
+  <text bindtap="btnDay"  style="background-color: {{bgrDay}};" >天</text>
+<text bindtap="btnMoth" style="background-color: {{bgrMoth}};">月</text>
+<text bindtap="btnYear" style="background-color: {{bgrYear}};">年</text></view>
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecYear }}" wx:if="{{years}}"></ec-canvas>
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecMoth }}" wx:if="{{moth}}"></ec-canvas>
+  <ec-canvas id="" canvas-id="" ec="{{ ecDay }}" wx:if="{{day}}"></ec-canvas>
+  </view>
+  
+

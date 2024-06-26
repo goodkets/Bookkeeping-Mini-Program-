@@ -1,0 +1,12 @@
+/* components/expenditure/expenditure.wxss */
+.Consumption-type{
+  /* position: relative; */
+  margin-top: 30rpx;
+  width: 300rpx;
+  line-height: 320rpx;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 40rpx;
+  background-color: transparent !important;
+  /* z-index: 999; */
+}

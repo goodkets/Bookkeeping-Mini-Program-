@@ -1,0 +1,8 @@
+<!--custom-tab-bar/index.wxml-->
+<van-tabbar active="{{ active }}"   bind:change="onChange">
+  <van-tabbar-item  icon="{{list[0].icon}}"  info="">{{list[0].text}}</van-tabbar-item>
+  <van-tabbar-item  icon="{{list[1].icon}}"  info="">{{list[1].text}}</van-tabbar-item>
+  <van-tabbar-item  icon="{{list[2].icon}}"  info="">{{list[2].text}}</van-tabbar-item>
+  <van-tabbar-item  icon="{{list[3].icon}}"  info="">{{list[3].text}}</van-tabbar-item>
+</van-tabbar>
+

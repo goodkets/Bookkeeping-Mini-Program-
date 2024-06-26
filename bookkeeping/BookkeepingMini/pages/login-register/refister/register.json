@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-field":"/miniprogram_npm/@vant/weapp/field/index",
+    "van-icon":"/miniprogram_npm/@vant/weapp/icon/index",
+    "van-dialog":"/miniprogram_npm/@vant/weapp/dialog/index",
+    "van-loading":"/miniprogram_npm/@vant/weapp/loading/index",
+    "van-overlay":"/miniprogram_npm/@vant/weapp/overlay/index"
+  }
+}

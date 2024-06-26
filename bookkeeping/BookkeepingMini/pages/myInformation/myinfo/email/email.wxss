@@ -1,0 +1,7 @@
+/* pages/myInformation/myinfo/email/email.wxss */
+.containerU{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 200rpx;
+}

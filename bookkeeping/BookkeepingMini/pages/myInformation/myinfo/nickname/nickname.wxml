@@ -1,0 +1,11 @@
+<view class="containerU">
+  <van-cell-group>
+  <van-field
+    model:value="{{  getnickname }}"
+    placeholder="请输入昵称"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-button type="" style="margin-left: 100rpx;margin-top: 30rpx;" bindtap="bao">保存</van-button>
+</view>

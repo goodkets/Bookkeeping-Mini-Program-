@@ -1,0 +1,23 @@
+/* pages/tab/tab1/tab1.wxss */
+
+ec-canvas {
+  width: 700rpx;
+  height: 600rpx;
+  background: #fff;
+}
+.btn{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -150rpx;
+  margin-left: 350rpx;
+  margin-bottom: 160rpx;
+}
+text{
+  margin-left: 20rpx;
+  width: 80rpx;
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+}

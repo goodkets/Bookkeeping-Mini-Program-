@@ -1,0 +1,10 @@
+<!--pages/Statistics/Statistics.wxml-->
+<van-tabs  active="{{ active }}" bind:change="onChange" swipeable >
+  <van-tab title="支出">
+  <tab-one wx:if="{{active==0}}"></tab-one>
+
+  </van-tab>
+  <van-tab title="收入">
+    <tab-two wx:if="{{active==1}}"></tab-two>
+  </van-tab>
+</van-tabs>

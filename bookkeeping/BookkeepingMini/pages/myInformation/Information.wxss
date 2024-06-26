@@ -1,0 +1,60 @@
+/* pages/myInformation/Information.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.containerl{
+  position: relative;
+  /* width: 800rpx; */
+  height: 1080rpx;
+  background-color: #f8f8f8;
+}
+.user-information {
+ height: 100%;
+ background-color: #f8f8f8;
+}
+.user-information .top {
+  position: relative;
+  height: 30%;
+  background-color: #6FA7F6;
+  /* border-radius:0 0 30rpx 30rpx; */
+}
+.user-information .top .image{
+  position: absolute;
+  left: 50%;
+  top: 36%;
+  transform: translate(-50%, -50%);
+  width: 100rpx;
+  height: 100rpx;
+  background-color: skyblue;
+  border-radius: 50%;
+}
+.user-information .top .btn{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.user-information .bottom{
+  margin-top: 10%;
+  /* height: 50%; */
+  /* background-color: #f7f7f7; */
+}
+.user-information .bottom .xinxi{
+  display: flex;
+  justify-content: space-between;
+  line-height: 80rpx;
+  margin: 0 60rpx;
+  background: #fff;
+  font-size: 30rpx;
+  padding-right: 20rpx;
+  cursor: pointer;
+  margin-top: 20rpx;
+  border-radius: 30rpx;
+}
+.user-information  .tui{
+  display: flex;
+  justify-content: center;
+  width: 200rpx;
+  margin: 30rpx auto;
+}

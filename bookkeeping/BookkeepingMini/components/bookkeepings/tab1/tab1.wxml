@@ -1,0 +1,9 @@
+<!--components/tab1/tab1.wxml-->
+<van-tabs active="{{ active}}" bind:change="onChange">
+  <van-tab title="{{item.name}}"  wx:for="{{lists}}" wx:key="index">
+  <!-- 收入和支出切换 -->
+  <count-sum wx:if="{{item.id===1}}"></count-sum>
+  <in-come wx:else="{{item.id===2}}"></in-come>
+ 
+  </van-tab>
+</van-tabs>

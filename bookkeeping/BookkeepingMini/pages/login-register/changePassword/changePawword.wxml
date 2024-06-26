@@ -1,0 +1,57 @@
+<!--pages/login-register/changePassword/changePawword.wxml-->
+<view class="containerz">
+<image src="../../../images/logBg.png"></image>
+<view class="zc">
+  <van-cell-group>
+<view class="user">
+<van-icon name="manager" class="user-ico"></van-icon>
+
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    bind:change="onChange"
+   style="width: 500rpx;"
+    custom-style="-webkit-background-clip:text"
+  /></view>
+  <view class="password">
+<van-icon name="lock" class="user-ico"></van-icon>
+  <van-field
+    value="{{ value1 }}"
+    placeholder="请输入密码(6-12位)"
+    border="{{ false }}"
+    type="{{password1}}"
+    bind:change="onChange1"
+   style="width: 500rpx;"
+    custom-style="-webkit-background-clip:text;"
+  />
+  <van-icon name="closed-eye" bindtap="xinan1" wx:if="{{password1=='password'}}"></van-icon>
+  <van-icon name="browsing-history-o" bindtap="yc1" wx:if="{{password1=='text'}}"></van-icon>
+  </view>
+  <view class="password">
+<van-icon name="lock" class="user-ico"></van-icon>
+  <van-field
+    value="{{ value2 }}"
+    placeholder="请确认密码"
+    border="{{ false }}"
+    style="width: 500rpx;"
+    type="{{password2}}"
+    bind:change="onChanges"
+    
+    custom-style="-webkit-background-clip:text"
+  />
+  <van-icon name="closed-eye" bindtap="xinan2" wx:if="{{password2=='password'}}"></van-icon>
+  <van-icon name="browsing-history-o" bindtap="yc2" wx:if="{{password2=='text'}}"></van-icon>
+  </view>
+  <view class="submit">
+  <button type="primary" bindtap="regUser"  style="background-color: #407FFE;" >修改</button>
+  
+  
+  </view>
+</van-cell-group>
+</view>
+<van-dialog id="van-dialog" />
+
+</view>
+
+

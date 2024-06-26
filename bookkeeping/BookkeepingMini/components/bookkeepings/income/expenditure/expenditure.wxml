@@ -1,0 +1,13 @@
+<!--components/expenditure/expenditure.wxml-->
+<!-- 收入选择类型 -->
+<button type="primary" class="Consumption-type" wx:if="{{!status}}" bindtap="changeStatus">{{index==='' ? '选择收入类型':column}}</button>
+<van-picker
+  show-toolbar
+  title="收入类型"
+  default-index="{{0}}"
+  columns="{{ columns }}"
+  bind:cancel="onCancel"
+  bind:confirm="onConfirm"
+  wx:else="{{status}}"
+/>
+

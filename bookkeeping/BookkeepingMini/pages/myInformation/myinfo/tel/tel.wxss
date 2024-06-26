@@ -1,0 +1,7 @@
+/* pages/myInformation/myinfo/nickname/mickname.wxss */
+.containerU{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 200rpx;
+}

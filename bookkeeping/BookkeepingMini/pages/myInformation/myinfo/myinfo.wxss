@@ -1,0 +1,29 @@
+/* pages/myInformation/myinfo/myinfo.wxss */
+.van-image{
+  display: block;
+  padding-top: 30rpx;
+}
+page{
+height: 600rpx;
+background-color: #f8f8f8;
+}
+.xinxi{
+  /* width: 640rpx; */
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 150rpx; */
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+  font-size: 30rpx;
+  /* border-radius: 20rpx; */
+  /* padding-right: 30rpx; */
+
+}
+.xiugai{
+  position:fixed;
+  width: 100%;
+  bottom: 600rpx;
+  /* left: 300rpx; */
+}

@@ -1,0 +1,49 @@
+/* pages/login-register/changePassword/changePawword.wxss */
+page{
+  height: 100%;
+background-color: #8CB6FF;
+}
+image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+.containerz{
+  position: relative;
+  /* width: 800rpx; */
+  height: 1280rpx;
+}
+.zc{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.user{
+  display: flex;
+  width: 630rpx;
+  margin-bottom: 30rpx;
+  border: #D4E5FF solid 2rpx;
+  border-radius: 20rpx;
+}
+
+.password{
+  display: flex;
+  width: 630rpx;
+  margin-bottom: 30rpx;
+  border: #D4E5FF solid 2rpx;
+  border-radius: 20rpx;
+}
+.user-ico{
+  color: #889AA4;
+  font-size: 70rpx;
+  width: 80rpx;
+  /* border-right: 1rpx solid #D4E5FF; */
+}
+.submit{
+  margin-top: 30rpx;
+}
